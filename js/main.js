@@ -1,5 +1,12 @@
 $(document).ready(function () {
     console.log("jQuery is working!");
+
+    $('.grid').masonry({
+      // options
+      itemSelector: '.grid-item',
+      gutter: 10,
+      columnWidth: 200
+    });
   });
   let isFileUploaded = false;
   let sidebarOpened = false;
